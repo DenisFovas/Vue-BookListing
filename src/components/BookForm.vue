@@ -1,5 +1,10 @@
 <template>
-  <form class="" action="#" method="post" v-on:submit.prevent="bookSubmit">
+  <form
+    class=""
+    action="#"
+    method="post"
+    v-on:submit.prevent="bookSubmit(bookTitle, bookAuthor)"
+  >
     <input
       v-model="bookTitle"
       type="text"
