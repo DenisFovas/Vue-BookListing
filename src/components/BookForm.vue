@@ -1,5 +1,5 @@
 <template>
-  <form class="" action="#" method="post">
+  <form class="" action="#" method="post" v-on:submit.prevent="bookSubmit">
     <input
       v-model="bookTitle"
       type="text"
